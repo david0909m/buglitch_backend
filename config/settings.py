@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv(
     'SECRET_KEY',
-    'django-insecure-k45k&9g%6fwk8#r(t&kpb8y#uqss3-!(ufs3#5*tg8q%a(l#c3'
+    'change-me-in-env'
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -98,8 +98,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('DB_NAME', 'buglitch_db'),
-        'USER': os.getenv('DB_USER', 'soporteadmin'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'soporte123.'),
+        'USER': os.getenv('DB_USER', 'postgres'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'postgres'),
         'HOST': os.getenv('DB_HOST', 'localhost'),
         'PORT': os.getenv('DB_PORT', '5432'),
     }
