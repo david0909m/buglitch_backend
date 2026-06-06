@@ -1,6 +1,6 @@
 # Buglitch Backend
 
-Backend Django REST para **Buglitch**, una aplicacion tipo SaaS para bug tracking orientada a equipos QA. El proyecto permite trabajar con workspaces, roles por equipo, proyectos, issues estilo Kanban, comentarios con imagenes, notificaciones internas y codigos de invitacion.
+Backend Django REST para **Buglitch**, una aplicacion tipo SaaS para bug tracking orientada a equipos de desarrollo o QA. El proyecto permite trabajar con workspaces, roles por equipo, proyectos, issues estilo Kanban, comentarios con imagenes, notificaciones internas y codigos de invitacion.
 
 La intencion del proyecto es servir como base backend para una app Flutter donde un equipo pueda reportar, asignar, comentar y dar seguimiento a errores encontrados durante pruebas de software.
 
@@ -414,11 +414,3 @@ python manage.py runserver 0.0.0.0:8000
 - `SECRET_KEY`, credenciales de base de datos y configuracion de hosts deben cambiarse en cada entorno.
 - `DEBUG=True` es solo para desarrollo.
 - Para produccion se debe configurar almacenamiento media, CORS y `ALLOWED_HOSTS` de forma estricta.
-
-## Roadmap Sugerido
-
-- Agregar expiracion o limite de uso a codigos de invitacion.
-- Agregar auditoria de cambios de roles/status.
-- Agregar thumbnails o compresion de imagenes.
-- Agregar soporte de archivos adicionales como logs o PDFs.
-- Preparar despliegue con variables de entorno reales y almacenamiento media externo.
